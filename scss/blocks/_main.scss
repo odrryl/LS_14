@@ -4,6 +4,11 @@
     padding: 96rem 165rem;
     justify-content: space-between;
     align-items: center;
+    gap: 89rem;
+
+    @include tablet{
+      flex-direction: column;
+    }
   }
 
   &__welcome {
@@ -19,13 +24,10 @@
     margin-bottom: 8rem;
   }
   &__desc {
-    color: var(--desc-color);
-    font-family: var(--font-family);
-    font-size: 16rem;
-    font-weight: 400;
+    
     max-width: 466rem;
     margin-bottom: 24rem;
-    line-height: 27rem;
+   
   }
 
   &__btn {
@@ -44,4 +46,13 @@
   &__btn:hover {
     transform: scale(1.2);
   }
+
+  &__image {
+    border-radius: 24rem;
+   
+    max-width: 475rem;
+    width: 100%;
+  }
+
+
 }

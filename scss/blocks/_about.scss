@@ -5,18 +5,17 @@
     justify-content: space-between;
     align-items: center;
     gap: 89rem;
+    
+    @include tablet{
+      flex-direction: column;
+    }
   }
 
   &__title {
     margin-bottom: 32rem;
   }
   &__desc {
-    color: var(--desc-color);
-    font-family: var(--font-family);
-    font-size: 16rem;
-    font-weight: 400;
     margin-bottom: 18rem;
-    line-height: 27rem;
   }
 
   &__btn {

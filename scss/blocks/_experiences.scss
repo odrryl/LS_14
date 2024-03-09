@@ -11,17 +11,22 @@
   
   }
   &__desc {
-    color: var(--desc-color);
-    font-family: var(--font-family);
-    font-size: 16rem;
-    font-weight: 400;
-    width: 730rem;
+   
+    max-width: 730rem;
     margin-bottom: 80rem;
-    line-height: 27rem;
+   
   }
   &__group {
-    display: flex;
-    gap: 30rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 30rem;
+grid-row-gap: 30rem;
+
+grid-template-columns: repeat(auto-fit, minmax(300rem, 1fr));
+  
+
+  
   }
   &__block {
     background: var(--primary-color);

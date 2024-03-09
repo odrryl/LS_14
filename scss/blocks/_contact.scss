@@ -4,6 +4,10 @@
     flex-direction: column;
     padding: 96rem 165rem;
     align-items: center;
+
+    @include tablet{
+      flex-direction: column;
+    }
   }
   &__title {
     text-align: center;
@@ -11,13 +15,9 @@
     margin-bottom: 24rem;
   }
   &__desc {
-    color: var(--desc-color);
-    font-family: var(--font-family);
-    font-size: 16rem;
-    font-weight: 400;
-    width: 685rem;
+   
+    max-width: 685rem;
     text-align: center;
-    line-height: 27rem;
   }
   &__info {
     margin-top: 56rem;
@@ -25,6 +25,10 @@
     justify-content: space-between;
     gap: 223rem;
     align-items: center;
+    @include tablet{
+      flex-direction: column;
+      gap:100rem;
+    }
   }
   &__block {
     display: flex;
@@ -44,7 +48,7 @@
   }
 
   &__form__field {
-    display: block;
+    display: flex;
   }
 
   &__btn {
@@ -88,10 +92,16 @@
 }
 .input__name {
   width: 350rem;
+  @include mobile{
+    width: 200rem;
+  }
 }
 .input__message {
   width: 540rem;
   height: 166rem;
+  @include mobile{
+    width: 300rem;
+  }
 }
 
 form {

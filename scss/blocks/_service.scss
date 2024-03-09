@@ -8,17 +8,20 @@
     margin-bottom: 24rem;
   }
   &__desc {
-    color: var(--desc-color);
-    font-family: var(--font-family);
-    font-size: 16rem;
-    font-weight: 400;
+   
     max-width: 461rem;
     margin-bottom: 56rem;
-    line-height: 27rem;
+   
   }
   &__group {
-    display: flex;
-    gap: 30rem;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 30rem;
+grid-row-gap: 30rem;
+max-width: 1440rem;
+grid-template-columns: repeat(auto-fit, minmax(300rem, 1fr));
   }
   &__block {
     background: var(--primary-color);
