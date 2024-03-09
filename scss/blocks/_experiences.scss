@@ -1,0 +1,71 @@
+.experiences {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 96rem 165rem;
+  }
+  &__title {
+    font-family: var(--second-family);
+    margin-bottom: 24rem;
+
+  
+  }
+  &__desc {
+    color: var(--desc-color);
+    font-family: var(--font-family);
+    font-size: 16rem;
+    font-weight: 400;
+    width: 730rem;
+    margin-bottom: 80rem;
+    line-height: 27rem;
+  }
+  &__group {
+    display: flex;
+    gap: 30rem;
+  }
+  &__block {
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 32rem;
+    border-radius: 12rem;
+  }
+  &__block__date {
+    color: var(--title-color);
+    font-family: var(--font-family);
+    font-size: 20rem;
+    font-weight: 400;
+    margin-bottom: 8rem;
+    line-height: 27rem;
+  }
+  &__block__title {
+    color: var(--main-accent-color);
+    font-family: var(--font-family);
+    font-size: 26rem;
+    font-weight: 700;
+    line-height: 41rem;
+
+    margin-bottom: 4rem;
+  }
+  &__block__program {
+    color: var(--title-color);
+    font-family: var(--font-family);
+    font-size: 16rem;
+    font-weight: 700;
+
+    text-align: left;
+    margin-bottom: 8rem;
+    line-height: 27rem;
+  }
+  &__block__desc {
+    color: var(--desc-color);
+    font-family: var(--font-family);
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 27rem;
+
+    text-align: left;
+    margin-left: 8rem;
+  }
+}

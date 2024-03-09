@@ -1,0 +1,47 @@
+.main {
+  &__container {
+    display: flex;
+    padding: 96rem 165rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__welcome {
+    color: var(--main-accent-color);
+    font-family: var(--font-family);
+    font-size: 16rem;
+    font-weight: 400;
+    margin-bottom: 24rem;
+  }
+
+  &__title {
+    
+    margin-bottom: 8rem;
+  }
+  &__desc {
+    color: var(--desc-color);
+    font-family: var(--font-family);
+    font-size: 16rem;
+    font-weight: 400;
+    max-width: 466rem;
+    margin-bottom: 24rem;
+    line-height: 27rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    color: var(--black);
+    font-family: var(--font-family);
+    font-size: 16rem;
+    font-weight: 400;
+
+    border-radius: 4rem;
+    background: var(--additional-accent-color);
+    padding: 8rem 20rem;
+    transition: 0.2s all ease-in;
+  }
+
+  &__btn:hover {
+    transform: scale(1.2);
+  }
+}

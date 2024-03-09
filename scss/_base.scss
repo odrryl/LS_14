@@ -1,0 +1,51 @@
+html {
+  font-size: 1px;
+
+  @include tablet {
+    font-size: 0.9px;
+  }
+
+  @include mobile {
+    font-size: 0.8px;
+  }
+}
+
+body {
+  font-size: 16rem;
+  font-family: var(--font-family);
+  background: var(--primary-color);
+  margin-inline: auto;
+}
+
+.container {
+  max-width: 1440rem;
+  margin-inline: auto;
+}
+
+.bg-dark {
+  background: var(--secondary-color);
+}
+
+.bg-light {
+  background: var(--bg-light);
+}
+
+.text-center {
+  text-align: center;
+}
+.mx-auto {
+  margin-inline: auto;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-size: 42rem;
+  font-weight: 700;
+  color: var(--title-color);
+
+}
+
+
+span {
+    color: var(--main-accent-color);
+  }

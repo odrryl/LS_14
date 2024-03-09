@@ -1,0 +1,36 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16rem 168rem;
+  }
+  &__logo {
+    font-family: var(--font-family);
+    font-size: 24rem;
+    font-weight: 700;
+    color: var(--white);
+
+  }
+
+  &__nav {
+    display: flex;
+    gap: 27rem;
+  }
+  &__link {
+    color: var(--gray);
+    font-family: var(--font-family);
+    font-size: 16rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.2s all ease-in;
+
+    span {
+      color: var(--white);
+    }
+  }
+
+  &__link:hover {
+    color: var(--white);
+  }
+}
